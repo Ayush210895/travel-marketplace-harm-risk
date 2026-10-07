@@ -65,11 +65,11 @@ The business ranking objective, imbalance strategy, model choice, and operating 
 - Mature training rows at the test cutoff: 88,479
 - Final test rows: 17,909
 - Harmful test bookings: 480
-- Reviewed bookings at 5% capacity: 896
+- Bookings flagged and ranked for manual review at 5% capacity: 896 of 17,909
 
 | Locked ranking policy | Precision at 5% | Recall at 5% | Harm value captured at 5% |
 |---|---:|---:|---:|
 | XGBoost probability | 11.05% | 20.63% | 28.93% |
 | XGBoost expected loss | 9.71% | 18.13% | **37.19%** |
 
-The selected expected-loss policy catches 87 harmful bookings and captures 37.19% of realized harmful value while reviewing 5% of traffic. Probability-only ranking catches more incidents, 99, but captures substantially less harmful value. This confirms the expected trade-off established before the test was opened.
+The selected expected-loss policy flags and ranks the top 5% of bookings for manual review. Within those 896 flagged bookings, it catches 87 harmful bookings and captures 37.19% of realized harmful value. Probability-only ranking catches more incidents, 99, but captures substantially less harmful value. This confirms the expected trade-off established before the test was opened.

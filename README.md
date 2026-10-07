@@ -10,9 +10,10 @@ The locked policy uses tuned XGBoost and ranks bookings by:
 predicted harm probability * estimated booking value
 ```
 
-On the untouched future test period, reviewing 5% of bookings:
+On the untouched future test period, the model flagged and ranked the top 5% of bookings for manual review:
 
 - Captured **37.19% of total harmful value**.
+- Flagged **896 of 17,909 bookings** for manual review, matching the 5% review capacity.
 - Caught 87 of 480 harmful bookings.
 - Achieved 9.71% precision and 18.13% recall.
 - Outperformed probability-only ranking on harmful value captured: 37.19% versus 28.93%.
