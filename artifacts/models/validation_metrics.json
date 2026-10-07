@@ -1,0 +1,78 @@
+{
+  "train_rows": 74571,
+  "validation_rows": 17908,
+  "xgboost_search_iterations": 12,
+  "xgboost_best_cv_recall_at_5pct": 0.18854005045138614,
+  "xgboost_best_parameters": {
+    "model__colsample_bytree": 0.7579526072702278,
+    "model__gamma": 0.2934881747180381,
+    "model__learning_rate": 0.020659024866018928,
+    "model__max_depth": 5,
+    "model__min_child_weight": 1,
+    "model__n_estimators": 591,
+    "model__reg_alpha": 0.2549614549276465,
+    "model__reg_lambda": 8.60184018093215,
+    "model__scale_pos_weight": 1.0,
+    "model__subsample": 0.9778902635540047
+  },
+  "validation": {
+    "logistic_regression": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.06200993803613274,
+      "roc_auc": 0.6289900574288426,
+      "precision_at_5pct": 0.09151785714285714,
+      "recall_at_5pct": 0.18141592920353983,
+      "brier_score": 0.024308239603544612,
+      "harm_value_capture_at_5pct": 0.24069948773079372
+    },
+    "logistic_regression_balanced": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.0577007512754637,
+      "roc_auc": 0.6244040642262112,
+      "precision_at_5pct": 0.09263392857142858,
+      "recall_at_5pct": 0.1836283185840708,
+      "brier_score": 0.25073057970007107,
+      "harm_value_capture_at_5pct": 0.24019282126096908
+    },
+    "xgboost": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.07136898800151956,
+      "roc_auc": 0.6329827764168621,
+      "precision_at_5pct": 0.08370535714285714,
+      "recall_at_5pct": 0.16592920353982302,
+      "brier_score": 0.024168118848934363,
+      "harm_value_capture_at_5pct": 0.258958116096202
+    },
+    "logistic_expected_loss_ranking": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.05019004970457454,
+      "roc_auc": 0.5885940529107825,
+      "precision_at_5pct": 0.07142857142857142,
+      "recall_at_5pct": 0.1415929203539823,
+      "harm_value_capture_at_5pct": 0.2800372321804241
+    },
+    "xgboost_expected_loss_ranking": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.05970652396081094,
+      "roc_auc": 0.5854838309012598,
+      "precision_at_5pct": 0.07254464285714286,
+      "recall_at_5pct": 0.14380530973451328,
+      "harm_value_capture_at_5pct": 0.2944127890506798
+    }
+  },
+  "current_operating_policy": {
+    "model": "xgboost",
+    "ranking_score": "predicted_harm_probability * estimated_booking_value",
+    "review_fraction": 0.05
+  }
+}

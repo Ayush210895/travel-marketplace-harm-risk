@@ -1,0 +1,32 @@
+{
+  "calibration_rows": 8954,
+  "evaluation_rows": 8954,
+  "evaluation_harm_rate": 0.02445834264016082,
+  "methods": {
+    "uncalibrated": {
+      "brier_score": 0.023287611082196236,
+      "log_loss": 0.10983393341302872,
+      "expected_calibration_error": 0.0052217732813739344,
+      "precision_at_5pct": 0.07589285714285714,
+      "recall_at_5pct": 0.1552511415525114,
+      "harm_value_capture_at_5pct": 0.2945842790140783
+    },
+    "platt": {
+      "brier_score": 0.023327553644776344,
+      "log_loss": 0.10994548350572586,
+      "expected_calibration_error": 0.005144347805968346,
+      "precision_at_5pct": 0.06473214285714286,
+      "recall_at_5pct": 0.1324200913242009,
+      "harm_value_capture_at_5pct": 0.26296490466405936
+    },
+    "isotonic": {
+      "brier_score": 0.023261811584234238,
+      "log_loss": 0.1125485748052597,
+      "expected_calibration_error": 0.0064122619318301745,
+      "precision_at_5pct": 0.07366071428571429,
+      "recall_at_5pct": 0.1506849315068493,
+      "harm_value_capture_at_5pct": 0.2937201407297717
+    }
+  },
+  "selected_method": "uncalibrated"
+}

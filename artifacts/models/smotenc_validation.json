@@ -1,0 +1,39 @@
+{
+  "train_rows": 74571,
+  "validation_rows": 17908,
+  "natural_training_harm_rate": 0.025210872859422563,
+  "strategies": {
+    "0.1": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.036759451000347734,
+      "roc_auc": 0.5643516847416108,
+      "precision_at_5pct": 0.05803571428571429,
+      "recall_at_5pct": 0.11504424778761062,
+      "harm_value_capture_at_5pct": 0.20953556703020718
+    },
+    "0.25": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.03417773598458899,
+      "roc_auc": 0.5546727346836142,
+      "precision_at_5pct": 0.049107142857142856,
+      "recall_at_5pct": 0.09734513274336283,
+      "harm_value_capture_at_5pct": 0.19782112846372846
+    },
+    "0.5": {
+      "rows": 17908,
+      "harmful_bookings": 452,
+      "review_count": 896,
+      "average_precision": 0.03287200127887367,
+      "roc_auc": 0.5508253875230162,
+      "precision_at_5pct": 0.04575892857142857,
+      "recall_at_5pct": 0.09070796460176991,
+      "harm_value_capture_at_5pct": 0.19240583560699961
+    }
+  },
+  "best_strategy": 0.1,
+  "best_harm_value_capture_at_5pct": 0.20953556703020718
+}

@@ -1,0 +1,31 @@
+{
+  "policy_locked_before_test": true,
+  "model": "xgboost",
+  "calibration": "uncalibrated",
+  "ranking_score": "predicted_harm_probability * estimated_booking_value",
+  "review_fraction": 0.05,
+  "training_rows": 88479,
+  "test_rows": 17909,
+  "test_start": "2017-02-03T13:34:19",
+  "probability_ranking": {
+    "rows": 17909,
+    "harmful_bookings": 480,
+    "review_count": 896,
+    "average_precision": 0.08842739858538341,
+    "roc_auc": 0.6463559297722187,
+    "precision_at_5pct": 0.11049107142857142,
+    "recall_at_5pct": 0.20625,
+    "brier_score": 0.025608726143107982,
+    "harm_value_capture_at_5pct": 0.2893073317328879
+  },
+  "expected_loss_ranking": {
+    "rows": 17909,
+    "harmful_bookings": 480,
+    "review_count": 896,
+    "average_precision": 0.06827806867000782,
+    "roc_auc": 0.6070934816493584,
+    "precision_at_5pct": 0.09709821428571429,
+    "recall_at_5pct": 0.18125,
+    "harm_value_capture_at_5pct": 0.37188936250088733
+  }
+}
