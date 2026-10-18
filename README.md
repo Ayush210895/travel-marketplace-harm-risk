@@ -1,5 +1,7 @@
 # Travel Marketplace Harm-Risk Prioritization
 
+[![Quality gate](https://github.com/Ayush210895/travel-marketplace-harm-risk/actions/workflows/quality-gate.yml/badge.svg)](https://github.com/Ayush210895/travel-marketplace-harm-risk/actions/workflows/quality-gate.yml)
+
 An end-to-end applied machine-learning project that scores hotel bookings before fulfillment and ranks the highest expected financial harm for manual review.
 
 ## Final Result
